@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>storm.contrib</groupId>
 	<artifactId>storm-hbase</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 
 	<scm>
 		<connection>https://github.com/jrkinley/storm-hbase.git</connection>
@@ -37,15 +37,15 @@
 	</repositories>
 
 	<properties>
-		<storm.version>0.8.2</storm.version>
-		<hbase.version>0.94.2-cdh4.2.1</hbase.version>
-		<hadoop.version>2.0.0-cdh4.2.1</hadoop.version>
+		<storm.version>0.9.1-incubating</storm.version>
+		<hbase.version>0.94.6-cdh4.5.0</hbase.version>
+		<hadoop.version>2.0.0-cdh4.5.0</hadoop.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
-			<groupId>storm</groupId>
-			<artifactId>storm</artifactId>
+      <groupId>org.apache.storm</groupId>
+      <artifactId>storm-core</artifactId>
 			<version>${storm.version}</version>
 		</dependency>
 		<dependency>
